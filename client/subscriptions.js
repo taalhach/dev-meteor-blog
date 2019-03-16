@@ -1,0 +1,11 @@
+// Meteor.subscribe('all-posts')
+// Meteor.subscribe('limited-posts')
+// Meteor.subscribe('specific-posts')
+// Session.setDefault('lazyloadLimit',2)
+// Tracker.autorun(()=>{
+//     Meteor.subscribe('lazyload-posts',Session.get('lazyloadLimit'))
+// })
+// Session.setDefault('lazyloadLimit',2)
+// Tracker.autorun(()=>{
+//     Meteor.subscribe('lazyload-posts',Session.get('lazyloadLimit'))
+// })
