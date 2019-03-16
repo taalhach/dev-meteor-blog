@@ -49,4 +49,23 @@ Meteor.startup(()=>{
             Posts.insert(post);
             });
     }
+   console.log(" Meteor.users.find({})")
+    if(Meteor.users.find().count() === 0) {
+        
+        var userId = Accounts.createUser({
+            username: 'talha',
+            email: 'talha@example.com',
+            password: '.',
+            profile: {
+            name: 'Talha'
+            }
+            });
+            // add the roles to our user
+            Meteor.users.update(userId, {$set: {
+            roles: {admin: true},
+            }})
+    
+    }
+
+
 })

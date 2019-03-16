@@ -1,12 +1,12 @@
 Template.home.created=()=>{
-    console.log("Home created!!!")
+    // console.log("Home created!!!")
 }
 Template.home.rendered=()=>{
-    console.log("Home Rendered!!!")
+    // console.log("Home Rendered!!!")
     // console.log(this.findAll('p'))
 }
 Template.home.destroyed=()=>{
-    console.log("Home destroyed!!!")
+    // console.log("Home destroyed!!!")
 }
 Template.home.helpers({
     exampleHelper: ()=>{

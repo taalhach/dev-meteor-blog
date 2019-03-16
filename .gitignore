@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
+/.meteor
+/.vscode
+
 
 # testing
 /coverage

@@ -2,8 +2,11 @@
     {{#markdown}}
     Welcome to my Blog
     Here I'm talking about my latest discoveries from the world of
-    JavaScript.
+    JavaScript.{{currentUser.roles.admin}}
     {{/markdown}}
+    {{#if currentUser.roles.admin}}
+    <a href="/create-post" class="createNewPost">Create New Post</a>
+    {{/if}}
     {{#each postList}}
     {{>postInList}}
     {{/each}}

@@ -16,3 +16,14 @@ Meteor.publish('lazyload-posts',(limit)=>{
 Meteor.publish('single-post',(slug)=>{
     return Posts.find({slug:slug})
 })
+
+Meteor.publish('userRoles',function(){
+    // console.log(this.userId," aya hai yahan pay ")
+    if (this.userId){
+        return Meteor.users.find({_id:this.userId},{
+            fields:{roles:1}
+        })
+    }else{
+        this.ready()
+    }
+})
